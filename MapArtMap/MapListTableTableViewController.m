@@ -121,7 +121,7 @@
 {
     // Return the number of rows in the section.
     if (bShowNearby)
-        return 5;
+        return 10;
     else if (bShowBeenThere || bShowWantToGo)
         return [subsetMaps count];
     else
@@ -138,7 +138,7 @@
     NSString *title, *subtitle, *company;
     if (bShowNearby) {
         map = [sortedMaps objectAtIndex:index];
-        title = [map description];
+        title = [map subtitle];
         // subtitle = [[NSString stringWithFormat:@"%4.0f", [map distance]/1609.0 ] stringByAppendingString:@" miles (as the crow flies)"];
         subtitle = [NSString stringWithFormat:@"%4.0f miles %@ (as the crow flies)", [map distance]/1609.0, [map direction]];
         company = [map company];

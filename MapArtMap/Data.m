@@ -102,7 +102,7 @@
             [maps addObject:[self strToMap:strMap]];
             strMap = @"mass_glouc.png|Massachusetts-Connecticut-Rhode Island|Gloucester|Calso|1954|42.6310145|-70.6876914|";
             [maps addObject:[self strToMap:strMap]];
-            strMap = @"mass_berk.png|Massachusetts-Connecticut-Rhode Island|Autumn in the Berkshires|Calso|1957|42.6310145|-70.6876914|";
+            strMap = @"mass_berk.png|Massachusetts-Connecticut-Rhode Island|Autumn in the Berkshires|Calso|1957|42.3473084|-73.3092742|";
             [maps addObject:[self strToMap:strMap]];
             strMap = @"SH_milwaukee.png|Milwaukee|Old Milwaukee Days Circus Parade|Shell|1973|43.045|-87.89|";
             [maps addObject:[self strToMap:strMap]];
@@ -122,7 +122,7 @@
             [maps addObject:[self strToMap:strMap]];
             strMap = @"SO_ne_public.png|New England|The Public Gardens, Boston, Mass.|Esso|1959|42.356294|-71.065123|";
             [maps addObject:[self strToMap:strMap]];
-            strMap = @"nhvt_river.png|New Hampshire-Vermont|Connecticut River|Calso|1954|42.3341263|-72.5973126|";
+            strMap = @"nhvt_river.png|New Hampshire-Vermont|Connecticut River|Calso|1954|43.234444|-72.433|";
             [maps addObject:[self strToMap:strMap]];
             strMap = @"nhvt_maple.png|New Hampshire-Vermont|Maple Syrup Time|Calso|1958|44.558803|-72.577841|";
             [maps addObject:[self strToMap:strMap]];
@@ -382,6 +382,92 @@
             strMap = @"wa-06-baker.png|Washington|Mt. Baker|Chevron|1954|48.777343|-121.813201|";
             [maps addObject:[self strToMap:strMap]];
             strMap = @"wa-07-index.png|Washington|Mt. Index|Chevron|1957|47.774549|-121.580942|";
+            [maps addObject:[self strToMap:strMap]];
+            
+            // added Tuesday 5-20-14
+            //
+            strMap = @"sh_Alabama.png|Alabama|White Pillars, an ante-bellum mansion|Shell|1974|31.9594679|-87.3623918|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Arizona.png|Arizona|An Indian against purple mesas|Shell|1974|36.9908328|-110.096237|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Arkansas.png|Arkansas-Louisiana-Mississippi|Tree-shrouded ante-bellum plantation|Shell|1974|31.54317|-91.38298|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Baltimore.png|Baltimore|Baltimore Washington Monument|Shell|1972|39.297522|-76.61567|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Boston.png|Boston|Old Ironsides|Shell|1972|42.37398|-71.055424|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_EasternUS.png|Eastern US|Shawnee State Forest, Ohio|Shell|1974|38.7996197|-83.4354425|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_KY-TN.png|Kentucky-Tennessee|Little Pidgeon River|Shell|1973|35.7036937|-83.3841386|Little Pidgeon River in the Great Smoky Mountains NP";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_LosAngeles.png|Los Angeles|Center for the Performing Arts|Shell|1973|34.056634|-118.24886|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Mass.png|Massachusetts-Connecticut-Rhode Island|Minuteman Statue, Lexington|Shell|1973|42.448921|-71.230108|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Michigan.png|Michigan|Sable Falls|Shell|1974|46.668183|-86.014435|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Minnesota.png|Minnesota|Witch Tree, Lake Superior|Shell|1974|47.958333|-89.641667|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Nevada.png|Nevada|Silence in a Nevada ghost town|Shell|1973|40.44583|-118.12222|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_NewJersey.png|New Jersey|Indian King Tavern|Shell|1973|39.89909|-75.030414|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_NewMexico.png|New Mexico|A view along Highway 70 (windmill)|Shell|1973|34.3257831|-108.0747225|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Ohio.png|Ohio|Winter scene in rural Ohio|Shell|1973|40.1903624|-82.6692525|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Penn.png|Pennsylvania|Once a battlefield, now a quiet rural scene|Shell|1973|39.811385|-77.222373|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Phoenix.png|Phoenix|Highway Panorama|Shell|1974|33.4617522|-112.0814919|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_SanJose.png|San Jose|Aerial view of Civic Center|Shell|1973|37.3512903|-121.903|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Seattle.png|Seattle|Space Needle|Shell|1972|47.62|-122.349|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Texas.png|Texas|Mission San Jose near San Antonio|Shell|1973|29.361393|-98.4784|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_Wisconsin.png|Wisconsin|The Brule River|Shell|1973|46.540873|-91.584818|";
+            [maps addObject:[self strToMap:strMap]];
+            
+            // added 5-20-14 group 2
+            //
+            strMap = @"ch_riverside_uc.png|Riverside and San Bernardino|University of California, Riverside|Chevron|1965|33.973287|-117.328111|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"gulf_chicago.png|Chicago|Palmolive Building and Water Tower|Gulf|1953|41.899793|-87.623501|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"gulf_miami.png|Miami and Miami Beach|Miami Beach|Gulf|1954|25.8139542|-80.1443065|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"gulf_phil.png|Philadelphia|Independence Hall 1776|Gulf|1968|39.948|-75.1505|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"KY_miss.png|Mississippi-Arkansas-Louisiana|Beauvoir, near Biloxi|Kyso|1953|30.391772|-88.969631|Beauvoir, near Biloxi, Mississippi, last home of Jefferson Davis";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_georgia.png|Georgia|Civil War battlefield|Shell|1973|32.8991|-82.0255|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_indiana.png|Indiana|A cave scene|Shell|1974|38.375569|-86.339468|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"sh_riverside.png|Riverside and San Bernardino|Mountains and freeway|Shell|1972|34.1424181|-117.3179937|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"so_ny_boldt.png|New York|Boldt Castle|Esso|1957|44.34434|-75.922653|Boldt Castle in the Thousand Islands near Alexandria Bay";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"so_ny_catskill.png|New York|Catskill Mountain Scenery|Esso|1947|42.0804|-74.3161061|Typical Catskill Mountain Scenery along Esopus Creek near Phoenicia, NY";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"so_ny_watkins.png|New York|Watkins Glen State Park|Esso|1951|42.370463|-76.894449|Watkins Glen State Park in the Finger Lakes Region";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"so_penn_bell.png|Pennsylvania|Liberty Bell|Esso|1951|39.9488|-75.1505|Liberty Bell, Independence Hall, Philadelphia";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"tx_humble.png|Texas|Longhorn Cavern|Humble|1960|30.681708|-98.349917|Sam Bass Entrance to Longhorn Cavern State Park";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"wisc_milw_pate.png|Wisconsin and Milwaukee|Fishing on a lake|Pate|1959|43.94273|-89.9932623|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"aaa_ny_carriage.png|New York|Central Park Carriage Ride|AAA|1959|40.782865|-73.965355|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"az-official-1939.png|Arizona|Fray Marcos de Niza|Official|1939|33.336111|-112.069444|In commemoration of Fray Marcos de Niza who passed this way in 1539";
+            [maps addObject:[self strToMap:strMap]];
+            
+            // added 5-21-14
+            strMap = @"bc-garibaldi.png|British Columbia and Alberta|Garibaldi Provincial Park|Chevron|1965|49.916667|-122.75|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"mexico.png|Mexico|Taxco|Chevron|1956|18.556389|-99.604722|";
             [maps addObject:[self strToMap:strMap]];
         }
     }

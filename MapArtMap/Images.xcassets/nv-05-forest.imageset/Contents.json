@@ -4,6 +4,10 @@
       "idiom" : "universal",
       "scale" : "1x",
       "filename" : "nv-05-forest.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
     }
   ],
   "info" : {

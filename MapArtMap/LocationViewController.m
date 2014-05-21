@@ -52,10 +52,62 @@
     // [self.locationManager startUpdatingLocation];
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    for (int i=1; i<=3; ++i) {
+        UIButton *b = (UIButton*)[[[self view] subviews] objectAtIndex:i];
+        
+        [b.layer setMasksToBounds:YES];
+        [b.layer setCornerRadius:8.0f];
+        [b.layer setBorderColor:[UIColor whiteColor].CGColor];
+        [b.layer setBorderWidth:1.0f];
+        
+        CAGradientLayer *grad = [CAGradientLayer layer];
+        [grad setBounds:b.bounds];
+        NSArray *colors = [NSArray arrayWithObjects:
+                           (id) [UIColor colorWithRed:180.0f / 255.0f green:90.0f / 255.0f blue:44.0f / 255.0f alpha:1.0f].CGColor, // top
+                           (id) [UIColor colorWithRed:150.0f / 245.0f green:70.0f / 255.0f blue:27.0f / 255.0f alpha:1.0f].CGColor, // bottom
+                           nil];
+        [grad setPosition:CGPointMake([b bounds].size.width / 2, [b bounds].size.height / 2)];
+        [grad setColors:colors];
+        
+        // if we never assigned a gradient before
+        if ([b.layer.sublayers count] < 1)
+            [b.layer insertSublayer:grad atIndex:0];
+        // if there is already a gradient assigned - replace it instead of adding one
+        else
+            [b.layer replaceSublayer:[b.layer.sublayers objectAtIndex:0] with:grad];
+        
+        // hide the "previous location" button; we no longer need it
+        if (i==3)
+            b.hidden = YES;
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation
+{
+    // this one is for iOS 5 only (my real iPad)
+    NSLog(@">> didUpdateToLocation:fromLocation:");
+    
+    currentLocation = newLocation;
+    
+    NSLog(@"latitude %+.6f, longitude %+.6f\n",
+          currentLocation.coordinate.latitude,
+          currentLocation.coordinate.longitude);
+    
+    [self.locationManager stopUpdatingLocation];
+    // [self.locationManager setDelegate:nil];
+    
+    // assign the distances from the current location
+    [self computeAllMapDistances:currentLocation];
+    [self performSegueWithIdentifier:@"currentLocationSegue" sender:self];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
@@ -72,6 +124,16 @@
     // assign the distances from the current location
     [self computeAllMapDistances:currentLocation];
     [self performSegueWithIdentifier:@"currentLocationSegue" sender:self];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    // The location "unknown" error simply means the manager is currently unable to get the location.
+    // We can ignore this error for the scenario of getting a single location fix, because we already have a
+    // timeout that will stop the location manager to save power.
+    NSLog(@"%@",[error localizedDescription]);
+    if ([error code] != kCLErrorLocationUnknown) {
+        [self.locationManager stopUpdatingLocation]; // :NSLocalizedString(@"Error", @"Error")];
+    }
 }
 
 - (void) computeAllMapDistances:(CLLocation*) loc
@@ -119,8 +181,25 @@
     next.bShowNearby = YES;
 }
 
+- (void) recolorButton: (id) button
+{
+    UIButton *b = (UIButton*) button;
+    CAGradientLayer *grad = [CAGradientLayer layer];
+    [grad setBounds:b.bounds];
+    NSArray *colors = [NSArray arrayWithObjects:
+                       (id) [UIColor colorWithRed:0.4 green:0.6 blue:0.8 alpha:1.0f].CGColor, // top
+                       (id) [UIColor colorWithRed:0.3 green:0.5 blue:0.7 alpha:1.0f].CGColor, // bottom
+                       nil];
+    [grad setPosition:CGPointMake([b bounds].size.width / 2, [b bounds].size.height / 2)];
+    [grad setColors:colors];
+    // [b.layer insertSublayer:grad atIndex:0];
+    [b.layer replaceSublayer:[b.layer.sublayers objectAtIndex:0] with:grad];
+}
+
 - (IBAction)doCurrentLocation:(id)sender
 {
+    [self recolorButton:sender];
+    
     // UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Current Location" message:@"Current Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
     // [alert show];
     NSLog(@"%s", "Current Location");
@@ -131,19 +210,21 @@
           locationManager.location.coordinate.latitude,
           locationManager.location.coordinate.longitude);
 
-    if (currentLocation.coordinate.latitude < 1.0 && currentLocation.coordinate.latitude > -1.0 &&
+    /*if (currentLocation.coordinate.latitude < 1.0 && currentLocation.coordinate.latitude > -1.0 &&
         currentLocation.coordinate.longitude < 1.0 && currentLocation.coordinate.longitude > -1.0)
-    {
+    {*/
        [self.locationManager startUpdatingLocation];
-    }
+    /*}
     else {
         [self computeAllMapDistances:currentLocation];
         [self performSegueWithIdentifier:@"currentLocationSegue" sender:self];
-    }
+    }*/
 }
 
 - (IBAction)doRequestedLocation:(id)sender
 {
+    [self recolorButton:sender];
+    
     // UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Requested Location" message:@"Requested Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
     // [alert show];
     NSLog(@"%s", "Requested Location");
@@ -162,5 +243,19 @@
          [self computeAllMapDistances:requestedLocation];
          [self performSegueWithIdentifier:@"requestedLocationSegue" sender:self];
      }];
+}
+
+- (IBAction)doCachedLocation:(id)sender {
+    [self recolorButton:sender];
+    
+    if (currentLocation.coordinate.latitude < 1.0 && currentLocation.coordinate.latitude > -1.0 &&
+        currentLocation.coordinate.longitude < 1.0 && currentLocation.coordinate.longitude > -1.0)
+    {
+        [self.locationManager startUpdatingLocation];
+    }
+    else {
+        [self computeAllMapDistances:currentLocation];
+        [self performSegueWithIdentifier:@"currentLocationSegue" sender:self];
+    }
 }
 @end

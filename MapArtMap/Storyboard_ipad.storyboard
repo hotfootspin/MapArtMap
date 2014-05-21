@@ -27,7 +27,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="y6G-lM-2UJ">
                                 <rect key="frame" x="280" y="871" width="200" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="  I have been here" image="red_x_24">
+                                <state key="normal" title="  I have been here" image="red_x_24_trans_3">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -39,7 +39,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Am-Yi-kfU">
                                 <rect key="frame" x="280" y="905" width="200" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="  I want to go here" image="red_x_24">
+                                <state key="normal" title="  I want to go here" image="red_x_24_trans_3">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -48,28 +48,46 @@
                                     <action selector="bookmarkWantToGo:" destination="ck8-Zr-rl5" eventType="touchUpInside" id="iyJ-E7-aRV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xA9-m6-TIc">
-                                <rect key="frame" x="678" y="384" width="70" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xA9-m6-TIc">
+                                <rect key="frame" x="678" y="384" width="70" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title=">">
+                                <color key="backgroundColor" red="0.65098039220000004" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="btnNext:" destination="ck8-Zr-rl5" eventType="touchUpInside" id="yNs-7k-VFp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QAJ-2W-uJK">
-                                <rect key="frame" x="20" y="384" width="70" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QAJ-2W-uJK">
+                                <rect key="frame" x="20" y="384" width="70" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="&lt;">
+                                <color key="backgroundColor" red="0.65098039220000004" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="btnPrevious:" destination="ck8-Zr-rl5" eventType="touchUpInside" id="cOm-Z7-3Fr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=">" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="prm-aa-JhY">
+                                <rect key="frame" x="692" y="398" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4fu-QT-vGq">
+                                <rect key="frame" x="34" y="398" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96484375" green="0.92167541058394165" blue="0.81885834854014594" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -215,70 +233,82 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map Art Map" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="krh-2z-Qrb">
-                                <rect key="frame" x="423" y="40" width="321" height="53"/>
+                                <rect key="frame" x="423" y="60" width="321" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="30"/>
                                 <color key="textColor" red="0.65238360969387754" green="0.32196932988424892" blue="0.13338915146918504" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UTh-PL-WtP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UTh-PL-WtP">
                                 <rect key="frame" x="423" y="121" width="321" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="backgroundColor" red="0.65098039215686276" green="0.32156862745098042" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="View a list of maps">
-                                    <color key="titleColor" red="0.65238360969999998" green="0.32196932989999999" blue="0.1333891515" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="viewListButton:" destination="KaO-La-gKG" eventType="touchUpInside" id="b6L-HK-i5O"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1AZ-nJ-pJl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1AZ-nJ-pJl">
                                 <rect key="frame" x="423" y="181" width="321" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="backgroundColor" red="0.65238360969999998" green="0.32196932989999999" blue="0.1333891515" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="View a map of locations">
-                                    <color key="titleColor" red="0.65238360969999998" green="0.32196932989999999" blue="0.1333891515" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="Czy-5Z-dIH" kind="push" id="xL9-Qg-uXd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CxK-of-2wv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CxK-of-2wv">
                                 <rect key="frame" x="423" y="241" width="321" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="backgroundColor" red="0.65238360969999998" green="0.32196932989999999" blue="0.1333891515" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Find locations near me">
-                                    <color key="titleColor" red="0.65238360969999998" green="0.32196932989999999" blue="0.1333891515" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="37o-0O-Dua" kind="push" id="LNK-ij-gZQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wlI-bB-IFp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wlI-bB-IFp">
                                 <rect key="frame" x="423" y="301" width="321" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="backgroundColor" red="0.65238360969999998" green="0.32196932989999999" blue="0.1333891515" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Places I Have Been">
-                                    <color key="titleColor" red="0.65238360969999998" green="0.32196932989999999" blue="0.1333891515" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="beenThereButton:" destination="KaO-La-gKG" eventType="touchUpInside" id="lAv-wb-Z6W"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qoq-fO-sXL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qoq-fO-sXL">
                                 <rect key="frame" x="423" y="361" width="321" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="backgroundColor" red="0.65238360969999998" green="0.32196932989999999" blue="0.1333891515" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Places I Want To Go">
-                                    <color key="titleColor" red="0.65238360969999998" green="0.32196932989999999" blue="0.1333891515" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="wantToGoButton:" destination="KaO-La-gKG" eventType="touchUpInside" id="FsU-d2-aS7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="feB-Jd-8f9">
+                                <rect key="frame" x="423" y="421" width="321" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65238360969999998" green="0.32196932989999999" blue="0.1333891515" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="About These Maps">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ldP-JV-AvF" kind="push" id="tMi-fF-RLG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -293,6 +323,95 @@
             </objects>
             <point key="canvasLocation" x="-707" y="-28"/>
         </scene>
+        <!--View Controller - Scenic Watercolor Maps-->
+        <scene sceneID="B2r-bR-Ylu">
+            <objects>
+                <viewController id="ldP-JV-AvF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wSu-T5-MKJ">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ca-09-redwoods" id="vJw-qk-tKv">
+                                <rect key="frame" x="20" y="20" width="127" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QDx-iT-8Nn">
+                                <rect key="frame" x="184" y="55" width="411" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Standard Oil Company of California (Chevron) started publishing these maps in 1948. They covered seven western states: California, Oregon, Washington, Idaho, Nevada, Utah, and Arizona. Over the course of 18 years, 10–11 scenes were released for each state, with some repeats. They also published maps for Seattle, Portland, and many California cities. The Standard Oil of Texas subsidiary published maps of some midwestern states, and Calso published maps of some northeastern states. These maps are of uniformly great quality.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SH_oklahoma" id="wS0-wG-ChD">
+                                <rect key="frame" x="618" y="165" width="130" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SO_nyc_evening" id="zg9-hF-XKM">
+                                <rect key="frame" x="20" y="510" width="146" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n37-Sa-Eqq">
+                                <rect key="frame" x="184" y="548" width="411" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Standard Oil of New Jersey (Esso) and Standard Oil of Kentucky (Kyso) also published maps with watercolor scenes from around 1946 to 1965. These scenes are of poorer quality than the Chevron scenes, and some of them have unfortunate characteristics such as ghosts of historical figures hovering over the scene or logos placed over the artwork. I have included a few of my favorite maps from this period here.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Utah_official" id="tNO-lk-Dv4">
+                                <rect key="frame" x="618" y="640" width="130" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="veW-76-KfB">
+                                <rect key="frame" x="184" y="793" width="411" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Other companies like Gulf and Texaco also published maps with watercolor scenes occasionally or for special events like the New York World's Fair. Their quality varies too. And some states issued "official" (department of commerce or transportation) maps with watercolor scenes, some of which are also beautiful. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chevron Oil Company 1948-1965" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IeD-Bs-Ngp">
+                                <rect key="frame" x="184" y="20" width="411" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.19607844948768616" green="0.32549020648002625" blue="0.47058826684951782" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shell Oil Company 1972-1974" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Gm-MS-TJP">
+                                <rect key="frame" x="184" y="290" width="411" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.59215688705444336" green="0.33725491166114807" blue="0.29411765933036804" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esso and Kyso 1946-1965" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lj7-J9-mez">
+                                <rect key="frame" x="184" y="510" width="411" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.84313732385635376" green="0.30588236451148987" blue="0.28235295414924622" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Maps" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wiW-lr-McV">
+                                <rect key="frame" x="184" y="762" width="411" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.27843138575553894" green="0.32941177487373352" blue="0.30588236451148987" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HAQ-wZ-5Nj">
+                                <rect key="frame" x="184" y="320" width="411" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Shell Oil published these maps of cities in 1972–1974 and states in 1973–1974. In most other years the maps had nondescript photographs, but in these years they used watercolor drawings that have a different sensibility than the earlier Chevron maps. These maps covered most states and cities. Some of them are hard to find. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9647059440612793" green="0.92156869173049927" blue="0.82352948188781738" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scenic Watercolor Maps" id="Y6V-e6-fzN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MQ8-X6-f25" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="1510"/>
+        </scene>
         <!--Location View Controller - Find maps near a location-->
         <scene sceneID="JCe-Pp-b7o">
             <objects>
@@ -305,34 +424,51 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="egC-gz-9Ku">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="egC-gz-9Ku">
                                 <rect key="frame" x="20" y="81" width="728" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59215688710000003" green="0.33725491169999999" blue="0.2941176593" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Use my current location">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="doCurrentLocation:" destination="37o-0O-Dua" eventType="touchUpInside" id="bQ1-yv-5Bp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JU0-Gw-gC0">
-                                <rect key="frame" x="20" y="303" width="728" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JU0-Gw-gC0">
+                                <rect key="frame" x="20" y="341" width="728" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59215688710000003" green="0.33725491169999999" blue="0.2941176593" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Go">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="doRequestedLocation:" destination="37o-0O-Dua" eventType="touchUpInside" id="pbT-TW-flX"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ikU-o5-LQ4">
-                                <rect key="frame" x="20" y="256" width="728" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rlO-cX-fK4">
+                                <rect key="frame" x="20" y="143" width="728" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59215688710000003" green="0.33725491169999999" blue="0.2941176593" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Use my previous location">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doCachedLocation:" destination="37o-0O-Dua" eventType="touchUpInside" id="30e-ct-nyo"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ikU-o5-LQ4">
+                                <rect key="frame" x="20" y="294" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96470594409999999" green="0.9215686917" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a location:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I0L-aA-I5i">
-                                <rect key="frame" x="20" y="221" width="728" height="22"/>
+                                <rect key="frame" x="20" y="259" width="728" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -403,7 +539,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -439,12 +575,16 @@
     </scenes>
     <resources>
         <image name="KY_fl_wakulla" width="714" height="1600"/>
+        <image name="SH_oklahoma" width="689" height="1600"/>
+        <image name="SO_nyc_evening" width="760" height="1600"/>
+        <image name="Utah_official" width="676" height="1600"/>
+        <image name="ca-09-redwoods" width="673" height="1600"/>
         <image name="calso-logo-2" width="82" height="86"/>
         <image name="connecticut_river_bkgd" width="1177" height="1699"/>
         <image name="green_check" width="24" height="24"/>
         <image name="greenpin" width="32" height="39"/>
         <image name="purplepin" width="32" height="39"/>
-        <image name="red_x_24" width="24" height="24"/>
+        <image name="red_x_24_trans_3" width="24" height="24"/>
         <image name="redpin" width="32" height="39"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -453,7 +593,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="rfj-NJ-m8f"/>
+        <segue reference="bpd-Mf-H4l"/>
         <segue reference="R8J-1i-KNK"/>
     </inferredMetricsTieBreakers>
 </document>

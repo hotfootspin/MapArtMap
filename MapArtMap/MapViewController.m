@@ -102,11 +102,39 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    for (int i=4; i<=5; ++i) {
+        UIButton *b = (UIButton*)[[[self view] subviews] objectAtIndex:i];
+        // b.layer.cornerRadius = 8;
+        // b.layer.borderColor = [UIColor whiteColor].CGColor;
+        // b.layer.borderWidth = 1;
+        // b.backgroundColor = [UIColor colorWithRed:166.0/256 green:82.0/256 blue:34.0/256 alpha:1.0];
+        // b.titleLabel.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
+
+        [b.layer setMasksToBounds:YES];
+        [b.layer setCornerRadius:8.0f];
+        [b.layer setBorderColor:[UIColor whiteColor].CGColor];
+        [b.layer setBorderWidth:1.0f];
+        
+        CAGradientLayer *grad = [CAGradientLayer layer];
+        [grad setBounds:b.bounds];
+        NSArray *colors = [NSArray arrayWithObjects:
+                           (id) [UIColor colorWithRed:180.0f / 255.0f green:90.0f / 255.0f blue:44.0f / 255.0f alpha:1.0f].CGColor, // top
+                           (id) [UIColor colorWithRed:150.0f / 245.0f green:70.0f / 255.0f blue:27.0f / 255.0f alpha:1.0f].CGColor, // bottom
+                           nil];
+        [grad setPosition:CGPointMake([b bounds].size.width / 2, [b bounds].size.height / 2)];
+        [grad setColors:colors];
+        [b.layer insertSublayer:grad atIndex:0];
+    }
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+
     // Get the new view controller using [segue destinationViewController].
     MoreTableViewController *next = [segue destinationViewController];
 
@@ -217,6 +245,8 @@
 }
 
 - (IBAction)btnNext:(id)sender {
+    
+
     // find the next map in the list
     NSMutableArray *maps = [[Data sharedMapData] getMaps];
     if (subsetIndexes != nil) {
@@ -240,6 +270,8 @@
 }
 
 - (IBAction)btnPrevious:(id)sender {
+
+
     // find the previous map in the list
     NSMutableArray *maps = [[Data sharedMapData] getMaps];
     if (subsetIndexes != nil) {

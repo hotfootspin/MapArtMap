@@ -4,6 +4,10 @@
       "idiom" : "universal",
       "scale" : "1x",
       "filename" : "wa-06-baker.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
     }
   ],
   "info" : {

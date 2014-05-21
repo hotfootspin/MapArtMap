@@ -15,6 +15,7 @@
 }
 
 - (void) computeAllMapDistances:(CLLocation*) loc;
+- (void) recolorButton: (id) button;
 
 @property (nonatomic, retain) NSMutableArray *nearbyMaps;
 @property (nonatomic, retain) NSMutableArray *mapDistances;
@@ -24,5 +25,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *requestedLocationField;
 - (IBAction)doCurrentLocation:(id)sender;
 - (IBAction)doRequestedLocation:(id)sender;
+- (IBAction)doCachedLocation:(id)sender;
 
 @end

@@ -17,5 +17,6 @@
 @property (nonatomic, assign) BOOL bBeenTherePressed;
 @property (nonatomic, assign) BOOL bWantToGoPressed;
 @property (nonatomic, assign) BOOL bListPressed;
+@property (nonatomic, assign) UIColor *savedColor;
 
 @end

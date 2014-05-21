@@ -4,6 +4,10 @@
       "idiom" : "universal",
       "scale" : "1x",
       "filename" : "ca-07-vernal.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
     }
   ],
   "info" : {
