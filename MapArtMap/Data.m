@@ -469,6 +469,30 @@
             [maps addObject:[self strToMap:strMap]];
             strMap = @"mexico.png|Mexico|Taxco|Chevron|1956|18.556389|-99.604722|";
             [maps addObject:[self strToMap:strMap]];
+            
+            // added 5-22-14
+            strMap = @"Edmonton_Calgary.png|Edmonton-Calgary|Jubilee Auditorium|Chevron|1964|51.06256|-114.092713|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"humble_mexico.png|Mexico|Mexico City Cathedral|Humble|1959|19.433532|-99.132911|The Cathedral in Mexico City stands on the site of an ancient Aztec templ. The building was started in 1573 and completed in 1667.";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"KY_gaal_cone.png|Georgia-Alabama|Cane Creek Falls|Kyso|1957|34.5557815|-84.0090933|Cane Creek Falls, near Dahlonega, Georgia";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"Portland_1949.png|Portland|Willamette River|Chevron|1949|45.49|-122.668|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"SO_alberta_bc_eisenhower.png|Alberta-British Columbia|Mount Eisenhower, Alberta|Esso|1955|51.3273401|-115.9657409|Mount Eisenhower, Alberta (Now called Castle Mountain)";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"SO_france.png|France|Parentis (Landes)|Esso|1959|44.352749|-1.08785|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"SO_italia.png|Italia|Paraggi (S. Margherita Ligure)|Esso|1955|44.3112244|9.210535|Paraggi (S. Margherita Ligure) (Paraggi, Genoa, Italy)";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"SO_ontario_muskoka.png|Ontario|Muskoka Lakes|Esso|1954|45.1173375|-79.5638624|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"SO_penn_hq.png|Pennsylvania|Washington's Headquarters at Valley Forge|Esso|1949|40.102514|-75.457449|";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"SO_quebec_mont.png|Quebec|Montmorency Falls|Esso|not dated|46.890616|-71.147613|Les chutes Montmorency, pres de Québec (Montmorency Falls, near Quebec City)";
+            [maps addObject:[self strToMap:strMap]];
+            strMap = @"SO_sweden.png|Svierge-Sweden|Slussen Cloverleaf|Esso|1957|59.319495|18.072331|The Old City of Stockholm and the Slussen Cloverleaf";
+            [maps addObject:[self strToMap:strMap]];
         }
     }
     

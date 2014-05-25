@@ -18,8 +18,10 @@
 // Minnesota is 48
 #define US_CENTER_LAT 38.0
 #define US_CENTER_LON -96.0
-#define US_SPAN_LAT 22.0
-#define US_SPAN_LON 40.0
+// #define US_SPAN_LAT 22.0
+// #define US_SPAN_LON 40.0
+#define US_SPAN_LAT 60.0
+#define US_SPAN_LON 65.0
 
 @interface PinViewController ()
 
