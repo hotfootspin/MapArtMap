@@ -101,6 +101,22 @@
     [self.mapView addAnnotations:annotations];
 }
 
+// for ios6
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+// for ios5
+-(BOOL)shouldAutoRotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscape);
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

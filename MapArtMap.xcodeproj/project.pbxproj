@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5D07063F18FFAF120006D518 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07063E18FFAF120006D518 /* MapViewController.m */; };
+		5D23A58419367A0F00303F53 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D23A58319367A0F00303F53 /* AboutViewController.m */; };
 		5D359D7118FEE45B00F2B14A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D359D7018FEE45B00F2B14A /* Foundation.framework */; };
 		5D359D7318FEE45B00F2B14A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D359D7218FEE45B00F2B14A /* CoreGraphics.framework */; };
 		5D359D7518FEE45B00F2B14A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D359D7418FEE45B00F2B14A /* UIKit.framework */; };
@@ -51,6 +52,8 @@
 /* Begin PBXFileReference section */
 		5D07063D18FFAF120006D518 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		5D07063E18FFAF120006D518 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		5D23A58219367A0F00303F53 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		5D23A58319367A0F00303F53 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		5D359D6D18FEE45B00F2B14A /* MapArtMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapArtMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D359D7018FEE45B00F2B14A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5D359D7218FEE45B00F2B14A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -174,6 +177,8 @@
 				5D359D8418FEE45B00F2B14A /* MapArtMap.xcdatamodeld */,
 				5D359DA518FEE62200F2B14A /* Storyboard.storyboard */,
 				5D5D4503190B82F90094B0D5 /* Storyboard_ipad.storyboard */,
+				5D23A58219367A0F00303F53 /* AboutViewController.h */,
+				5D23A58319367A0F00303F53 /* AboutViewController.m */,
 				5DAB0F3B190C6735001C3637 /* LocationViewController.h */,
 				5DAB0F3C190C6735001C3637 /* LocationViewController.m */,
 				5DC06A1619079C6000B4CD96 /* MoreTableViewController.h */,
@@ -332,6 +337,7 @@
 				5D79FE6D190F06C800F6B574 /* UserMapBookmark.m in Sources */,
 				5D9E5DBB1900EF0000E5A9EE /* Data.m in Sources */,
 				5D359D7F18FEE45B00F2B14A /* main.m in Sources */,
+				5D23A58419367A0F00303F53 /* AboutViewController.m in Sources */,
 				5D359DA918FF0C8D00F2B14A /* MapListTableTableViewController.m in Sources */,
 				5DA3956F19038795009C0B3B /* PinViewController.m in Sources */,
 				5D79FE70190F83FD00F6B574 /* HomeViewController.m in Sources */,

@@ -129,6 +129,23 @@
     }
 }
 
+// for ios6
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+// for ios5
+-(BOOL)shouldAutoRotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscape);
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

@@ -73,6 +73,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+// for ios6
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+// for ios5
+-(BOOL)shouldAutoRotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscape);
+}
 
 #pragma mark - Navigation
 

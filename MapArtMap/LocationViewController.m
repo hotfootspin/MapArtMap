@@ -77,11 +77,29 @@
         // if there is already a gradient assigned - replace it instead of adding one
         else
             [b.layer replaceSublayer:[b.layer.sublayers objectAtIndex:0] with:grad];
+        /*
+         */
         
         // hide the "previous location" button; we no longer need it
         if (i==3)
             b.hidden = YES;
     }
+}
+
+// for ios6
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+// for ios5
+-(BOOL)shouldAutoRotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscape);
 }
 
 - (void)didReceiveMemoryWarning

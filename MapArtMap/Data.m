@@ -493,6 +493,10 @@
             [maps addObject:[self strToMap:strMap]];
             strMap = @"SO_sweden.png|Svierge-Sweden|Slussen Cloverleaf|Esso|1957|59.319495|18.072331|The Old City of Stockholm and the Slussen Cloverleaf";
             [maps addObject:[self strToMap:strMap]];
+            
+            // added 5-31-14
+            strMap = @"AL_BC_Butchart.png|Alberta-British Columbia|Butchart Gardens|Esso|1954|48.563576|-123.470626|The Butchart Gardens, near Victoria, B.C.";
+            [maps addObject:[self strToMap:strMap]];
         }
     }
     
